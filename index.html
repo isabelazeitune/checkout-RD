@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Checkout RD</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Empresa 100% confiável</a>
+            <a class="btn btn-primary" href="#">Continuar comprando</a>
+        </nav>
+    </header>
+    <main class = "container">
+        <form id = "checkout" class = "row mt-4">
+            <div class = "col-md-4">
+                <header class = "bg-dark text-light p-2">
+                    Dados Pessoais
+                </header>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="nomeUsuario">Nome completo:</label>
+                        <input class="form-control" type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Digite o seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpfUsuario">CPF:</label>
+                        <input class="form-control" type="text" id="cpfUsuario" name="cpfUsuario" placeholder="Digite o seu CPF">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefoneUsuario">Telefone:</label>
+                        <input class="form-control" type="tel" id="telefoneUsuario" name="telefoneUsuario" placeholder="Digite o seu telefone">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailUsuario">Email:</label>
+                        <input class="form-control" type="email" id="emailUsuario" name="emailUsuario" placeholder="Digite o seu email">
+                    </div>
+                    <div class="form-group">
+                        <label for="senhaUsuario">Senha:</label>
+                        <input class="form-control" type="password" id="senhaUsuario" name="senhaUsuario" placeholder="Digite uma senha">
+                    </div>
+                    <div class="form-group">
+                        <label for="confSenhaUsuario">Confirmar senha:</label>
+                        <input class="form-control" type="password" id="confSenhaUsuario" name="confSenhaUsuario" placeholder="Repita a senha">
+                    </div>
+                </div>
+            </div>
+            <div class = "col-md-4">
+                <header class = "bg-dark text-light p-2">
+                    Entrega
+                </header>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="cepUsuario">CEP:</label>
+                        <input class="form-control" type="text" id="cepUsuario" name="cepUsuario" placeholder="Digite seu CEP">
+                    </div>
+                    <div class="form-group">
+                        <label for="enderecoUsuario">Endereço:</label>
+                        <input class="form-control" type="text" id="enderecoUsuario" name="enderecoUsuario" placeholder="Digite o seu endereço (rua/avenida)">
+                    </div>
+                    <div class="form-group">
+                        <label for="numeroUsuario">Número:</label>
+                        <input class="form-control" type="text" id="numeroUsuario" name="numeroUsuario" placeholder="Digite o número da sua residência">
+                    </div>
+                    <div class="form-group">
+                        <label for="complementoUsuario">Complemento:</label>
+                        <input class="form-control" type="text" id="complementoUsuario" name="complementoUsuario" placeholder="Digite o complemento (apto)">
+                    </div>
+                    <div class="form-group">
+                        <label for="bairroUsuario">Bairro:</label>
+                        <input class="form-control" type="text" id="bairroUsuario" name="bairroUsuario" placeholder="Digite o bairro">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="cidadeUsuario">Cidade:</label>
+                            <input class="form-control" type="text" id="cidadeUsuario" name="cidadeUsuario" placeholder="Digite a cidade">
+                        </div>
+                        <div class="col-6">
+                            <label for="estadoUsuario">Estado:</label>
+                            <select name="estadoUsuario" id="estadoUsuario" class="form-control">
+                                <option value="" disabled selected>Selecione o estado</option>
+                                <option value="SP">SP</option>
+                                <option value="RJ">RJ</option>
+                                <option value="ES">ES</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="formaDeEnvioUsuario">Forma de envio:</label>
+                        <div class="display-flex justify-content-space-between row">
+                            <div class="col-5">
+                            <label for="envioRapido"> Rápido: R$50</label>
+                            <input type="radio" id="freteRapido" name="formaDeEnvioUsuario">
+                        </div>
+                        <div class="col-5">
+                            <label for="envioNormal"> Normal: R$20</label>
+                            <input type="radio" id="freteNormal" name="formaDeEnvioUsuario">
+                        </div>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+            <div class = "col-md-4">
+                <header class = "bg-dark text-light p-2">
+                    Pagamento
+                </header>
+                <div class="p-2">
+                    <div class="d-flex justify-content-center flex-column">
+                        <h4>Camiseta Branca GG</h4>
+                        <p>R$20,00</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="numeroCartaoUsuario">Número do Cartão:</label>
+                        <input class="form-control" type="number" id="numeroDoCartaoUsuario" name="numeroDoCartaoUsuario" placeholder="Digite o número do seu cartão">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-8">
+                            <label for="dataDeValidadeUsuario">Validade:</label>
+                            <input class="form-control" type="month" id="dataDeValidadeUsuario" name="dataDeValidadeUsuario">
+                        </div>
+                        <div class="col-4">
+                            <label for="codigoDeSegurancaUsuario">CVV:</label>
+                            <input class="form-control" type="number" id="codigoDeSegurancaUsuario" name="emailUsuario" placeholder="Digite o código de segurança do seu cartão">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nomeTitularUsuario">Nome do Titular:</label>
+                        <input class="form-control" type="text" id="nomeTitularUsuario" name="nomeTitularUsuario" placeholder="Digite o nome do titular">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpfTitularUsuario">CPF do titular:</label>
+                        <input class="form-control" type="text" id="cpfDoTitularUsuario" name="cpfDoTitularUsuario" placeholder="Digite o CPF do titular">
+                    </div>
+                    <div class="d-flex justify-content-end ">
+                        <button class="btn btn-success" type="submit">Finalizar compra</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
