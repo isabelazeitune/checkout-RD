@@ -1,0 +1,19 @@
+.i-error {
+    border-color: red;
+}
+
+.i-sucess {
+     border-color: green;
+ }
+
+ .i-error:focus {
+     outline-color: red;
+     box-shadow: 0 0 10px red;
+     border-color: red;
+ }
+
+ .i-sucess:focus {
+    outline-color: green;
+    box-shadow: 0 0 10px green;
+    border-color: green;
+ }
